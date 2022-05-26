@@ -10,17 +10,15 @@
     Enter no. of days needed to complete task:<br />
     <b>OR</b> <br/>
     Enter the validity of your next Recharge/Refill in days inorder to see the actual last date without the need to look at the calender:<br />
-    <input id="input1" type="number" name="sk" />
+    <input id="input1" type="number" name="sk" value="" />
     <br />
     <input type="button" value="submit" onclick="buttonClick()"/>
-    <p>Days entered (Controlled input type) :</p>
+    <p>Days entered  :</p>
     <h1 id="h1"></h1>
-
-    <p>Days entered (UnControlled input type) :</p>
-    <h2 id="h2"></h2>
 
     <p>Hit Submit to see Last Date as on calender:</p>
     <h3></h3>
+    <input type="button" value="Reset to Current Date" onclick="reset()"/>
     <script src="./script.js"></script>
   </body>
 </html>
