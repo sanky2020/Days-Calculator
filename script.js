@@ -14,12 +14,16 @@ element.addEventListener('input',(e)=>{
 })
 
 function buttonClick(){
+    if(element.value.trim().length===0){
+        alert("Input cannot be blank, Kindly enter the value")
+    }
+    else{
     date.setDate(date.getDate()+ parseInt(element.value));
-
     dateTag.innerHTML = date;
     lastPTag.innerText = "Last Date as on calender:";
     element.value="";
     h1.innerText=""
+}
 }
 
 const reset = () =>{
