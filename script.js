@@ -5,7 +5,7 @@ let p = document.getElementsByTagName('p');
 
 let lastPTag = p[p.length-1];
 
-lastPTag.innerText = "Hit Submit to see Last Date as on calender:"
+lastPTag.innerText = "Enter value & Hit Submit to see Last Date as on calender:"
 
 let date= new Date();
 
@@ -25,4 +25,6 @@ function buttonClick(){
 const reset = () =>{
     date= new Date();
     dateTag.innerHTML = date;
+    lastPTag.innerText = "Enter value & Hit Submit to see Last Date as on calender:"
+
 }
